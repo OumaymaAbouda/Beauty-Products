@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products</title>
+    <!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<!-- bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="CSS/product.css">
+
+      <link rel="stylesheet" href="CSS/style1.css">
+  </head>
+  <body>
+    <!--navbar-->
+      <header>
+      <nav>
+          <div class="navbar">
+          <h4 class="logo"> BEAUTY <span>PRODUCTS</span></h4>
+          <ul class="items">
+          <li><a href="index2.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li>
+            <a href="">PRODUCTS &#x25BE</a>
+            <ul class="dropdown">
+                <li><a href="skin.html">Skin Care</a></li>
+                <li><a href="hair.html">Hair Care</a></li>
+                <li><a href="body.html">Body Care</a></li>
+            </ul>
+        </li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><i class="fas fa-bars"></i></li>
+          </ul>
+      </div>
+      </nav>
+      </header>
+      <!--HOME-->
+      <section id="intro" class="my-lg-8">
+        <div class="slider">
+            <div class="slides">
+        <div class="slide slide1">
+        <div class="container-lg">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+              <div class="image-holder text-center">
+                <img src="Images/img1.png" alt="banner" class="img-fluid rounded-5">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner-content ms-lg-5">
+                <h1 class="display-1">Skin Care Products</h1>
+                <p class="fs-3 fw-light">Your skin need some help from us. Make sure to watch our natural skin care products.</p>
+                <a href="skin.html" class="btn " id="face">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        </div>
+        <div class="slide slide2">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-6">
+                <div class="image-holder text-center">
+                  <img src="Images/img2.png" alt="banner" class="img-fluid rounded-5">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-content ms-lg-5">
+                  <h1 class="display-1">Hair Care Products</h1>
+                  <p class="fs-3 fw-light">Your hair need some help from us. Make sure to watch our natural hair care products.</p>
+                  <a href="hair.html" class="btn ">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="container-lg">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-6">
+                <div class="image-holder text-center">
+                  <img src="Images/img3.jpg" alt="banner" class="img-fluid rounded-5">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-content ms-lg-5">
+                  <h1 class="display-1">Body Care Products</h1>
+                  <p class="fs-3 fw-light">Your skin need some help from us. Make sure to watch our natural skin care products.</p>
+                  <a href="body.html" class="btn ">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="controls">
+                <button class="prev btn2" onclick="prevSlide()">&#10094</button>
+                <button class="next btn2" onclick="nextSlide()">&#10095</button>
+        
+            </div>
+            <div class="dots"></div>
+        </div>
+        
+      </section>
+      <!--Gamme-->
+      
+      <section>
+        <div class="produits">
+           <div class="card">
+               <div class="product-image" id="card-front">
+                   <img src="Images/b1.jpg" alt="">
+               </div>
+               <div class="product -info">
+                   <h4>L’Oréal Paris  Crème pour les Mains</h4>
+                   <h4>40.000 DT</h4>
+               </div>
+               <div class="bot">
+                   <button type="button">Add to Cart</button>
+               </div>
+           </div>
+           <div class="card">
+            <div class="product-image " id="card-back">
+              <img src="Images/s6.jpg" alt="">
+          </div>
+          <div class="product -info">
+              <h4>La Roche Posay Pure Vitamin C10 Serum</h4>
+              <h4>149.000 DT</h4>
+          </div>
+          <div class="bot">
+              <button type="button">Add to Cart</button>
+          </div>
+           </div>
+           <div class="card">
+            <div class="product-image" id="card-back">
+              <img src="Images/h6.jpg" alt="">
+          </div>
+          <div class="product -info">
+              <h4>Kérastase OSerum Anti Chute  50ml  </h4>
+              <h4>154.000 DT</h4>
+          </div>
+          <div class="bot">
+              <button type="button">Add to Cart</button>
+          </div>
+           </div>
+           <div class="card" style="">
+            <div class="product-image" id="card-back">
+              <img src="Images/H3.jpg" alt="">
+          </div>
+          <div class="product -info">
+              <h4>Kérastase Sérum Chroma Thermique </h4>
+              <h4>94.000 DT</h4>
+          </div>
+          <div class="bot">
+              <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <!--services-->
+      <section class="sec ser">
+        <p class="para">Services</p>
+        <h1 class="heading">Healthy beautiful and balanced life</h1>
+        <div class="row box">
+            <div class="boxes">
+                <img src="Images/img4.jpg" alt="">
+                <h1 class="heading">skin Services</h1>
+                <p class="para1">Skincare represents the art of taking care of our largest organ, the skin. It's more than just a morning and evening routine; it’s a special time to connect with yourself.</p>
+            </div>
+            <div class="boxes">
+                <img src="Images/img5.jpg" alt="">
+                <h1 class="heading">Hair Services</h1>
+                <p class="para1">Hair care is an essential practice for maintaining the health and beauty of our hair. it is a delicate and attentive approach to taking care of the texture, shine and strength of our hair.</p>
+            </div>
+            <div class="boxes">
+                <img src="Images/img6.jpg" alt="">
+                <h1 class="heading">Body Services</h1>
+                <p class="para1">Body care is a comprehensive practice aimed at taking care of our entire body. They range from daily moisturizing to regular exfoliation to applying nourishing creams.</p>
+            </div>
+        </div>
+
+      </section>
+      <!--footer-->
+      <br>
+      <footer>
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Skin Care</a></li>
+                                <li><a href="#">Hair Care</a></li>
+                                <li><a href="#">Body Care</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Legacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Reach us</h3>
+                            <ul>
+                                <li><a href="#">4060,Mall of Sousse</a></li>
+                                <li><a href="#">Email:beauty_products@gmail.com</a></li>
+                                <li><a href="#">call: +216 25994944</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                            <a href="#"><i class="fa-brands fa-snapchat"></i> </a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <p class="copyright">Beauty Products © 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+         
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+      
+  </body>
